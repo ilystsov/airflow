@@ -1,22 +1,19 @@
-[build-system]
-requires = ["setuptools>=68.1"]
-build-backend = "setuptools.build_meta"
-
-[project]
-name = "homework_10"
-version = "0.0.1"
-authors = [
-  { name="Dmitry Kosarevsky", email="if@kosarevsky.ru" },
-]
-description = "A Tinkoff Python AB hw-10 package"
+[tool.poetry]
+name = "python-ab2-hw-airflow-ilystsov"
+version = "0.1.0"
+description = ""
+authors = ["ilya <lystsov.ilya@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.12"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-]
 
-[project.urls]
-"Homepage" = "https://github.com/central-university-dev/python-hw-10-template"
-"Bug Tracker" = "https://github.com/central-university-dev/python-hw-10-template/issues"
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+apache-airflow = "^2.9.1"
+radon = "^6.0.1"
+pylint = "^3.2.3"
+python-dotenv = "^1.0.1"
+matplotlib = "^3.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
